@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>余空の主页</title>
+    <meta name="keywords" content="余空,YuKongA,主页,Homepage">
+    <link rel="shortcut icon" url="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="FiraCode.css">
+    <link rel="stylesheet" type="text/css" href="YuKongA.css">
+</head>
+
+<body>
+    <!--
+    <div id="header">
+        <p><a href="https://v1.hitokoto.cn">一言API</a>丨<a href="https://tianqiapi.com/api.php?style=tu&skin=pitaya">天气API</a>丨<a href="https://api.blogbig.cn/bing/api.php">壁纸API</a></p>
+    </div>
+    -->
+    <div id="box">
+        <div class="meBox">
+            <div class="headPhoto"></div>
+            <div class="meBox-title">
+                <p>余空</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <br>
+                <br>
+                <p>喜欢数码产品</p>
+                <br>
+                <p>因为没有钱</p>
+                <p>所以只能选性价比这样子</p>
+            </div>
+            <div class="meBox-Button1">
+                <a href="https://github.com/YuKongA">GitHub</a>
+            </div>
+            <div class="meBox-Button2">
+                <a href="https://www.coolapk.com/u/680367">Coolapk</a>
+            </div>
+        </div>
+
+        <div id="cmdBox">
+            <div class="cmd">
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="title">
+                    <span>YuKongA - zsh</span>
+                </div>
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat ./Me.txt</span>
+                    <p>自我介绍：</p>
+                    <p>昵称：余空</p>
+                    <p>性别：男</p>
+                    <p>年龄：21岁</p>
+                    <p>地址：浙江，中国</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat ./More.txt</span>
+                    <p>目前状态：</p>
+                    <li>快实习了</li>
+                    <li>啥也不会</li>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">sudo rm -rf /</span>
+                    <p>zsh:请输入密码: ****</p>
+                    <p>zsh:已删除</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+
+            <div class="cmd cmd2">
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="title">
+                    <span>YuKongA - zsh</span>
+                </div>
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Links.sh</span>
+                    <p>更多链接：</p>
+                    <ul class="ul">
+                        <li><a href="https://od.yukonga.top/">杂货间(网盘)</a></li>
+                        <li><a href="https://font.yukonga.top/">字体字重测试</a></li>
+                        <li><a href="https://icon.yukonga.top/">获取高质量应用图标</a></li>
+                        <li><a href="https://music.yukonga.top/">YesPlayMusic</a></li>
+                        <li><a href="https://ac.yukonga.top/">便携小空调</a></li>
+                    </ul>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Hitokoto.sh</span>
+                    <p>这里是一言：</p>
+                    <p id="hitokoto">嘛，一言获取中🤣...</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Weather.sh</span>
+                    <p>这里是天气：</p>
+                    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tu&skin=pitaya" frameborder="0"
+                        width="350" height="18" allowtransparency="true"></iframe>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyrights © 2021 - 浙ICP备2021010095号</p>
+    </div>
+
+    <script>
+        fetch("https://v1.hitokoto.cn")
+            .then(response => response.json())
+            .then(data => {
+                const hitokoto = document.getElementById("hitokoto")
+                hitokoto.innerText = data.hitokoto + "—" + "「" + data.from + "」"
+            })
+            .catch(console.error)
+    </script>
+
+</body>
+
+</html>

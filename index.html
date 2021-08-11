@@ -12,12 +12,7 @@
     <link rel="stylesheet" type="text/css" href="YuKongA.css">
 </head>
 
-<body>
-    <!--
-    <div id="header">
-        <p><a href="https://v1.hitokoto.cn">一言API</a>丨<a href="https://tianqiapi.com/api.php?style=tu&skin=pitaya">天气API</a>丨<a href="https://api.blogbig.cn/bing/api.php">壁纸API</a></p>
-    </div>
-    -->
+<body onload="startTime()">
     <div id="box">
         <div class="meBox">
             <div class="headPhoto"></div>
@@ -40,7 +35,6 @@
                 <a href="https://www.coolapk.com/u/680367">Coolapk</a>
             </div>
         </div>
-
         <div id="cmdBox">
             <div class="cmd">
                 <div class="click">
@@ -54,8 +48,7 @@
                 <div class="cmdText">
                     <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
                     <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">cat ./Me.txt</span>
-                    <p>自我介绍：</p>
+                    <span style="color: rgb(39, 39, 39);">cat ./About.txt</span>
                     <p>昵称：余空</p>
                     <p>性别：男</p>
                     <p>年龄：21岁</p>
@@ -63,9 +56,8 @@
                     <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
                     <span style="color: blue;">~</span>
                     <span style="color: rgb(39, 39, 39);">cat ./More.txt</span>
-                    <p>目前状态：</p>
                     <li>快实习了</li>
-                    <li>啥也不会</li>
+                    <li>但是啥也不会</li>
                     <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
                     <span style="color: blue;">~</span>
                     <span style="color: rgb(39, 39, 39);">sudo rm -rf /</span>
@@ -75,7 +67,6 @@
                     <span style="color: blue;">~</span>
                 </div>
             </div>
-
             <div class="cmd cmd2">
                 <div class="click">
                     <div class="red"></div>
@@ -89,35 +80,43 @@
                     <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
                     <span style="color: blue;">~</span>
                     <span style="color: rgb(39, 39, 39);">./Links.sh</span>
-                    <p>更多链接：</p>
                     <ul class="ul">
                         <li><a href="https://od.yukonga.top/">杂货间(网盘)</a></li>
                         <li><a href="https://font.yukonga.top/">字体字重测试</a></li>
-                        <li><a href="https://icon.yukonga.top/">获取高质量应用图标</a></li>
                         <li><a href="https://music.yukonga.top/">YesPlayMusic</a></li>
-                        <li><a href="https://ac.yukonga.top/">便携小空调</a></li>
+                        <li><a href="https://icon.yukonga.top/">获取来自App Store的应用图标</a></li>
                     </ul>
                     <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
                     <span style="color: blue;">~</span>
                     <span style="color: rgb(39, 39, 39);">./Hitokoto.sh</span>
-                    <p>这里是一言：</p>
                     <p id="hitokoto">嘛，一言获取中🤣...</p>
                     <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
                     <span style="color: blue;">~</span>
                     <span style="color: rgb(39, 39, 39);">./Weather.sh</span>
-                    <p>这里是天气：</p>
                     <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tu&skin=pitaya" frameborder="0"
                         width="350" height="18" allowtransparency="true"></iframe>
                     <br />
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Date.sh</span>
+                    <br />
+                    <span id="nowDateTimeSpan"></span>
+                    <br />
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./API.sh</span>
+                    <p><a href="https://v1.hitokoto.cn">一言</a>丨<a
+                            href="https://tianqiapi.com/api.php?style=tu&skin=pitaya">天气</a>丨<a
+                            href="https://api.blogbig.cn/bing/api.php">壁纸</a></p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="footer">
         <p>Copyrights © 2021 - 浙ICP备2021010095号</p>
     </div>
-
     <script>
         fetch("https://v1.hitokoto.cn")
             .then(response => response.json())
@@ -127,7 +126,38 @@
             })
             .catch(console.error)
     </script>
-
+    <script language="JavaScript">
+        function startTime() {
+            var today = new Date();//定义日期对象   
+            var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年    
+            var MM = today.getMonth() + 1;//通过日期对象的getMonth()方法返回年    
+            var dd = today.getDate();//通过日期对象的getDate()方法返回年     
+            var hh = today.getHours();//通过日期对象的getHours方法返回小时   
+            var mm = today.getMinutes();//通过日期对象的getMinutes方法返回分钟   
+            var ss = today.getSeconds();//通过日期对象的getSeconds方法返回秒   
+            // 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+            MM = checkTime(MM);
+            dd = checkTime(dd);
+            mm = checkTime(mm);
+            ss = checkTime(ss);
+            var day; //用于保存星期（getDay()方法得到星期编号）
+            if (today.getDay() == 0) day = "星期日 "
+            if (today.getDay() == 1) day = "星期一 "
+            if (today.getDay() == 2) day = "星期二 "
+            if (today.getDay() == 3) day = "星期三 "
+            if (today.getDay() == 4) day = "星期四 "
+            if (today.getDay() == 5) day = "星期五 "
+            if (today.getDay() == 6) day = "星期六 "
+            document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "-" + MM + "-" + dd + " " + hh + ":" + mm + ":" + ss + "   " + day;
+            setTimeout('startTime()', 1000);//每一秒中重新加载startTime()方法 
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
 </body>
 
 </html>

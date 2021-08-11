@@ -26,6 +26,15 @@ body {
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(88,88,88);
+}
+   
+a:hover {
+    color:#3498db;
+}
+
 .meBox {
     float: left;
     width: 21rem;
@@ -140,32 +149,30 @@ body {
     float: left;
     margin-left: 10%;
     line-height: 30px;
-    text-decoration: none;
     color: rgb(88, 88, 88);
     transition: all 0.3s;
 }
 
 
 .meBox-Button1 a:hover {
-    color: rgb(0, 135, 255);
     font-size: 1.1rem;
     margin-left: 9%;
+    color:#3498db;
 }
 
 .meBox-Button2 a {
     float: right;
     margin-right: 10%;
     line-height: 30px;
-    text-decoration: none;
     color: rgb(88, 88, 88);
     transition: all 0.3s;
 }
 
 
 .meBox-Button2 a:hover {
-    color: rgb(0, 135, 255);
     font-size: 1.1rem;
     margin-right: 9%;
+    color:#3498db;
 }
 
 
@@ -274,12 +281,11 @@ body {
 }
 
 .cmd2 .cmdText .ul a {
-    text-decoration: none;
     color: rgb(88,88,88);
 }
 
 .cmd2 .cmdText .ul a:hover {
-    color: rgb(51, 105, 232);
+    color:#3498db;
 }
 
 #footer {
@@ -309,11 +315,6 @@ body {
 #header a{
     width: 99%;
     color: white;
-    text-decoration: none;
-}
-
-#header a:hover {
-    color: rgb(51, 105, 232);
 }
 
 @media screen and (max-height: 500px) and (min-width: 1280px) {

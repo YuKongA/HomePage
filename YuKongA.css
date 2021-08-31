@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: url(https://api.blogbig.cn/bing/api.php);
+    background-image: url(./Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -57,7 +57,7 @@ a:hover {
 .headPhoto {
     width: 8rem;
     height: 8rem;
-    background: url(YuKongA.png) no-repeat;
+    background: url(./YuKongA.png) no-repeat;
     background-size: cover;
     border-radius: 50%;
     position: relative;

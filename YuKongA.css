@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
 }
 
 html, body {
@@ -327,12 +326,14 @@ a:hover {
 @media screen and (max-width: 1280px) {
     #box {
         width: 100%;
+        top: auto;
+        bottom: auto;
     }
 
     .meBox {
         width: 21rem;
         float: none;
-        margin: 100px auto 100px;
+        margin: 150px auto 150px;
     }
 
     .meBox:hover {
@@ -369,14 +370,18 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
+    #box {
+        width: 100%;
+    }
+
     body {
         background-size: 1000%;
-        background-attachment: scroll;
     }
 
     .meBox {
         width: 80%;
-        margin-top: 80px;
+        float: none;
+        margin: 120px auto 100px;
     }
 
     .meBox:hover .meBox-text {

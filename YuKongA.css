@@ -376,6 +376,7 @@ a:hover {
 
     body {
         background-size: 1000%;
+        background-attachment: scroll;
     }
 
     .meBox {

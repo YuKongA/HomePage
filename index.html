@@ -2,184 +2,183 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
-    name="viewport">
-  <title>余空の主页</title>
-  <meta content="余空,YuKongA,主页,Homepage" name="keywords">
-  <link rel="shortcut icon" url="favicon.ico">
-  <link href="YuKongA.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" name="viewport">
+    <title>余空の主页</title>
+    <meta content="余空,YuKongA,主页,Homepage" name="keywords">
+    <link rel="shortcut icon" url="favicon.ico">
+    <link href="YuKongA.css" rel="stylesheet" type="text/css">
 </head>
 
 <body onload="startTime()">
-  <div id="box">
-    <div class="meBox">
-      <div class="headPhoto"></div>
-      <div class="meBox-title">
-        <p>YuKongA</p>
-        <div class="fg"></div>
-      </div>
-      <div class="meBox-text">
-        <p>喜欢数码产品</p>
-        <p>📱💻🎧🖱️</p>
-        <br>
-        <a href="https://github.com/YuKongA/Unlock_MIUI_ThemeManager">MIUI主题破解<br>(Magisk Module)</a>
-        <br>
-        <br>
-        <a href="https://github.com/1767523953/MiuiHome">MiuiHome<br>(Xposed Module)</a>
-      </div>
-      <div class="meBox-Button1">
-        <a href="https://github.com/YuKongA">GitHub</a>
-      </div>
-      <div class="meBox-Button2">
-        <a href="https://t.me/MiuiHome_Xposed">Telegram</a>
-      </div>
+    <div id="box">
+        <div class="meBox">
+            <div class="headPhoto"></div>
+            <div class="meBox-title">
+                <p>YuKongA</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>喜欢数码产品</p>
+                <p>📱💻🎧🖱️</p>
+                <br>
+                <a href="https://github.com/YuKongA/Unlock_MIUI_ThemeManager">MIUI主题破解<br>(Magisk Module)</a>
+                <br>
+                <br>
+                <a href="https://github.com/1767523953/MiuiHome">MiuiHome<br>(Xposed Module)</a>
+            </div>
+            <div class="meBox-Button1">
+                <a href="https://github.com/YuKongA">GitHub</a>
+            </div>
+            <div class="meBox-Button2">
+                <a href="https://t.me/MiuiHome_Xposed">Telegram</a>
+            </div>
+        </div>
+        <div id="cmdBox">
+            <div class="cmd">
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="title">
+                    <span>YuKongA - zsh</span>
+                </div>
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat ./About.txt</span>
+                    <p>昵称: YuKongA</p>
+                    <p>性别: 男</p>
+                    <p>年龄: <span id="ageSpan"></span><br /></p>
+                    <p>地址: 浙江，中国</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat ./More.txt</span>
+                    <p>已经实习几个月了</p>
+                    <p>但依然还是啥也不会</p>
+                    <p>哪家倒霉公司(bushi</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">sudo rm -rf /*</span>
+                    <p>zsh: 请输入密码: ****</p>
+                    <p>zsh: 已删除</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+            <div class="cmd cmd2">
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="title">
+                    <span>YuKongA - zsh</span>
+                </div>
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Weather.sh</span>
+                    <div id="he-plugin-simple"></div>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Hitokoto.sh</span>
+                    <p id="hitokoto">一言获取中...</p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Date.sh</span>
+                    <br /><span id="nowDateTimeSpan"></span> <br />
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./Link.sh</span>
+                    <ul class="ul">
+                        <li><a href="https://od.yukonga.top/">杂货间(网盘)</a></li>
+                        <li><a href="https://font.yukonga.top/">字体字重测试</a></li>
+                        <li><a href="https://music.yukonga.top/">YesPlayMusic</a></li>
+                        <li><a href="https://icon.yukonga.top/">获取高质量应用图标</a></li>
+                    </ul>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./API.sh</span>
+                    <p><a href="https://hitokoto.cn/">一言API</a>丨<a href="https://dev.qweather.com/">天气API</a></p>
+                    <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="cmdBox">
-      <div class="cmd">
-        <div class="click">
-          <div class="red"></div>
-          <div class="yellow"></div>
-          <div class="green"></div>
-        </div>
-        <div class="title">
-          <span>YuKongA - zsh</span>
-        </div>
-        <div class="cmdText">
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">cat ./About.txt</span>
-          <p>昵称: YuKongA</p>
-          <p>性别: 男</p>
-          <p>年龄: <span id="ageSpan"></span><br /></p>
-          <p>地址: 浙江，中国</p>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">cat ./More.txt</span>
-          <p>已经实习几个月了</p>
-          <p>但依然还是啥也不会</p>
-          <p>哪家倒霉公司(bushi</p>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">sudo rm -rf /*</span>
-          <p>zsh: 请输入密码: ****</p>
-          <p>zsh: 已删除</p>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-        </div>
-      </div>
-      <div class="cmd cmd2">
-        <div class="click">
-          <div class="red"></div>
-          <div class="yellow"></div>
-          <div class="green"></div>
-        </div>
-        <div class="title">
-          <span>YuKongA - zsh</span>
-        </div>
-        <div class="cmdText">
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">./Weather.sh</span>
-          <div id="he-plugin-simple"></div>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">./Hitokoto.sh</span>
-          <p id="hitokoto">一言获取中...</p>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">./Date.sh</span>
-          <br /><span id="nowDateTimeSpan"></span> <br />
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">./Link.sh</span>
-          <ul class="ul">
-            <li><a href="https://od.yukonga.top/">杂货间(网盘)</a></li>
-            <li><a href="https://font.yukonga.top/">字体字重测试</a></li>
-            <li><a href="https://music.yukonga.top/">YesPlayMusic</a></li>
-            <li><a href="https://icon.yukonga.top/">获取高质量应用图标</a></li>
-          </ul>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-          <span style="color: rgb(39, 39, 39);">./API.sh</span>
-          <p><a href="https://hitokoto.cn/">一言API</a>丨<a href="https://dev.qweather.com/">天气API</a></p>
-          <span style="color: rgb(0, 190, 0);">yuk@YuKongA</span>
-          <span style="color: blue;">~</span>
-        </div>
-      </div>
+    <div id="footer">
+        <p>Copyrights © 2021 - 浙ICP备2021010095号</p>
     </div>
-  </div>
-  <div id="footer">
-    <p>Copyrights © 2021 - 浙ICP备2021010095号</p>
-  </div>
 
-  <script>
-    fetch("https://v1.hitokoto.cn")
-      .then(response => response.json())
-      .then(data => {
-        const hitokoto = document.getElementById("hitokoto")
-        hitokoto.innerText = data.hitokoto + "—" + "「" + data.from + "」"
-      })
-      .catch(console.error)
+    <script>
+        fetch("https://v1.hitokoto.cn")
+            .then(response => response.json())
+            .then(data => {
+                const hitokoto = document.getElementById("hitokoto")
+                hitokoto.innerText = data.hitokoto + "—" + "「" + data.from + "」"
+            })
+            .catch(console.error)
+    </script>
+    <script language="JavaScript">
+        function startTime() {
+            var today = new Date();
+            var yyyy = today.getFullYear();
+            var MM = today.getMonth() + 1;
+            var dd = today.getDate();
+            var hh = today.getHours();
+            var mm = today.getMinutes();
+            var ss = today.getSeconds();
+            MM = checkTime(MM);
+            dd = checkTime(dd);
+            mm = checkTime(mm);
+            ss = checkTime(ss);
+            var day;
+            if (today.getDay() == 0) day = "星期日"
+            if (today.getDay() == 1) day = "星期一"
+            if (today.getDay() == 2) day = "星期二"
+            if (today.getDay() == 3) day = "星期三"
+            if (today.getDay() == 4) day = "星期四"
+            if (today.getDay() == 5) day = "星期五"
+            if (today.getDay() == 6) day = "星期六"
+            document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "年" + MM + "月" + dd + "日 " + hh + ":" + mm + ":" + ss + "   " + day;
+            document.getElementById('ageSpan').innerHTML = yyyy - 2001
+            setTimeout('startTime()', 1000);
+        }
 
-  </script>
-  <script language="JavaScript">
-    function startTime() {
-      var today = new Date();
-      var yyyy = today.getFullYear();
-      var MM = today.getMonth() + 1;
-      var dd = today.getDate();
-      var hh = today.getHours();
-      var mm = today.getMinutes();
-      var ss = today.getSeconds();
-      MM = checkTime(MM);
-      dd = checkTime(dd);
-      mm = checkTime(mm);
-      ss = checkTime(ss);
-      var day;
-      if (today.getDay() == 0) day = "星期日"
-      if (today.getDay() == 1) day = "星期一"
-      if (today.getDay() == 2) day = "星期二"
-      if (today.getDay() == 3) day = "星期三"
-      if (today.getDay() == 4) day = "星期四"
-      if (today.getDay() == 5) day = "星期五"
-      if (today.getDay() == 6) day = "星期六"
-      document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "年" + MM + "月" + dd + "日 " + hh + ":" + mm + ":" + ss + "   " + day;
-      document.getElementById('ageSpan').innerHTML = yyyy - 2001
-      setTimeout('startTime()', 1000);
-    }
-    function checkTime(i) {
-      if (i < 10) {
-        i = "0" + i;
-      }
-      return i;
-    }
-  </script>
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
 
-  <script>
-    WIDGET = {
-      "CONFIG": {
-        "modules": "21043",
-        "background": "5",
-        "tmpColor": "272727",
-        "tmpSize": "14",
-        "cityColor": "272727",
-        "citySize": "14",
-        "aqiColor": "272727",
-        "aqiSize": "14",
-        "weatherIconSize": "20",
-        "alertIconSize": "14",
-        "padding": "0px 0px 0px 0px",
-        "shadow": "0",
-        "language": "auto",
-        "fixed": "false",
-        "vertical": "center",
-        "horizontal": "left",
-        "key": "39d5414136a24548ac8fd6a41a47c62e"
-      }
-    }
-  </script>
-  <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+    <script>
+        WIDGET = {
+            "CONFIG": {
+                "modules": "21043",
+                "background": "5",
+                "tmpColor": "272727",
+                "tmpSize": "14",
+                "cityColor": "272727",
+                "citySize": "14",
+                "aqiColor": "272727",
+                "aqiSize": "14",
+                "weatherIconSize": "20",
+                "alertIconSize": "14",
+                "padding": "0px 0px 0px 0px",
+                "shadow": "0",
+                "language": "auto",
+                "fixed": "false",
+                "vertical": "center",
+                "horizontal": "left",
+                "key": "39d5414136a24548ac8fd6a41a47c62e"
+            }
+        }
+    </script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 </body>
 
 </html>

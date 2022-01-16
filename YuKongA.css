@@ -231,33 +231,33 @@ a:hover {
 }
 
 .cmd .click .red {
-    background-color: #FD5A5B;
-    box-shadow: 0 0 1px #FD5A5B;
+    background-color: #FD5A56;
+    box-shadow: 0 0 1px #FD5A56;
 }
 
 .cmd .click .red:hover {
-    background-color: #FD5A5B;
-    box-shadow: 0 0 5px #FD5A5B;
+    background-color: #FD5A56;
+    box-shadow: 0 0 5px #FD5A56;
 }
 
 .cmd .click .yellow {
-    background-color: #FEB22C;
-    box-shadow: 0 0 1px #FEB22C;
+    background-color: #F8BC33;
+    box-shadow: 0 0 1px #F8BC33;
 }
 
 .cmd .click .yellow:hover {
-    background-color: #FEB22C;
-    box-shadow: 0 0 5px #FEB22C;
+    background-color: #F8BC33;
+    box-shadow: 0 0 5px #F8BC33;
 }
 
 .cmd .click .green {
-    background-color: #24CC2D;
-    box-shadow: 0 0 1px #24CC2D;
+    background-color: #62CB44;
+    box-shadow: 0 0 1px #62CB44;
 }
 
 .cmd .click .green:hover {
-    background-color: #24CC2D;
-    box-shadow: 0 0 5px #24CC2D;
+    background-color: #62CB44;
+    box-shadow: 0 0 5px #62CB44;
 }
 
 .cmdText {

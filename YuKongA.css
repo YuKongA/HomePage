@@ -92,7 +92,7 @@ a:hover {
 .meBox-title p {
     font-size: 1.2rem;
     border-right: 0.125em solid;
-    width: 7.3ch;
+    width: 7.6ch;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 1.5s steps(20, end), blink-caret 0.6s step-end infinite alternate;

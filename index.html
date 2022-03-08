@@ -22,10 +22,13 @@
                 <p>喜欢数码产品</p>
                 <p>📱💻🎧🖱️</p>
                 <br>
-                <a href="https://github.com/YuKongA/Unlock_MIUI_ThemeManager">MIUI主题破解<br>(Magisk Module)</a>
-                <br>
-                <br>
-                <a href="https://github.com/1767523953/MiuiHome">MiuiHome<br>(Xposed Module)</a>
+                <p>MiuiHome</p>
+                <a href="https://github.com/1767523953/MiuiHome">Xposed</a>
+                <br> <br>
+                <p>MIUI 主题破解</p>
+                <a href="https://github.com/YuKongA/Unlock_MIUI_ThemeManager">Magisk</a>
+                <a href="https://github.com/qqlittleice/FuckThemeManager">Xposed</a>
+
             </div>
             <div class="meBox-Button1">
                 <a href="https://github.com/YuKongA">GitHub</a>
@@ -142,7 +145,7 @@
             if (today.getDay() == 4) day = "星期四"
             if (today.getDay() == 5) day = "星期五"
             if (today.getDay() == 6) day = "星期六"
-            document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "年" + MM + "月" + dd + "日 " + hh + ":" + mm + ":" + ss + "   " + day;
+            document.getElementById('nowDateTimeSpan').innerHTML = yyyy + "年" + MM + "月" + dd + "日 " + day + "   " + hh + ":" + mm + ":" + ss;
             document.getElementById('ageSpan').innerHTML = yyyy - 2001
             setTimeout('startTime()', 1000);
         }

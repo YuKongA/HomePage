@@ -20,6 +20,9 @@
                 <p>YuKongA</p>
                 <div class="fg2"></div>
             </div>
+            <div class="meBox-hitokoto">
+                <p id="hitokoto"></p>
+            </div>
             <div class="meBox-text">
                 <a href="https://github.com/YuKongA">GitHub</a>
             </div>
@@ -38,5 +41,15 @@
         <p><b>Copyrights © 2022 - YuKongA</b></p>
     </div>
 </body>
+
+<script>
+    fetch("https://v1.hitokoto.cn")
+        .then(response => response.json())
+        .then(data => {
+            const hitokoto = document.getElementById("hitokoto")
+            hitokoto.innerText = data.hitokoto + "——" + "「" + data.from + "」"
+        })
+        .catch(console.error)
+</script>
 
 </html>

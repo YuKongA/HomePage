@@ -94,11 +94,23 @@ a {
 }
 
 .meBox-title .fg2 {
-    width: 10%;
-    height: 2.5px;
-    background-image: linear-gradient(160deg, #b100ff 20%, #00b3ff 80%);
+    width: 120px;
+    height: 0.5px;
+    background-color: #fff;
     border-radius: 50px;
     margin: 20px auto 40px auto;
+}
+
+.meBox-hitokoto p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-shadow: 0.5px 0.5px 0 #000;
+    border-right: 0 solid;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 0 40px;
+    transition: 0.3s;
 }
 
 .meBox-text {
@@ -110,7 +122,6 @@ a {
     border: solid 1px #fff;
     border-radius: 8px;
     transition: background-color 0.35s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 5px;
 }
 

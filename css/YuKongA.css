@@ -11,18 +11,18 @@ body {
 }
 
 body {
-    background-image: url(../images/Background.jpg);
+    background-image: url(../images/Background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "MiSans";
+    font-family: "MiLanTing";
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
 
 @font-face {
-    font-family: MiSans;
-    src: url(../fonts/MiSansVF.ttf);
+    font-family: MiLanTing;
+    src: url(../fonts/MiLanTing-Regular.ttf);
 }
 
 #box {
@@ -42,9 +42,7 @@ a {
 }
 
 .meBox {
-    transition: 0.3s;
     text-align: center;
-
 }
 
 .headPhoto {
@@ -56,17 +54,15 @@ a {
     margin: 0 auto;
     position: relative;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    transition: 0.65s;
+    transition: transform 0.65s;
 }
 
 .headPhoto:hover {
     transform: rotate(360deg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
 
 .meBox-title {
     position: relative;
-    top: -8%;
     margin: 0 auto;
 }
 
@@ -84,13 +80,13 @@ a {
 
 .meBox-title p {
     color: #ffffff;
-    letter-spacing: 1.2px;
     font-size: 3rem;
+    text-shadow: 0.5px 0.5px 0 #000;
     border-right: 0.13em solid;
-    width: 7.5ch;
+    width: 8ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 1.5s steps(18, end), blink-caret 0.55s step-end infinite alternate;
+    animation: typing 1.8s steps(25, end), blink-caret 0.5s step-end infinite alternate;
     margin: 0 auto;
     transition: 0.3s;
 }
@@ -104,39 +100,26 @@ a {
 .meBox-title .fg2 {
     width: 10%;
     height: 2.5px;
-    background: linear-gradient(90deg, #b828d1, transparent) #0085ff;
+    background-image: linear-gradient(160deg, #b100ff 20%, #00b3ff 80%);
     border-radius: 50px;
     margin: 20px auto 40px auto;
 }
 
-@keyframes meBox-text {
-    0% {
-        transform: translateY(30px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .meBox-text {
-    width: 130px;
+    width: 115px;
     overflow: hidden;
     text-align: center;
-    font-size: 1.1rem;
-    animation-name: meBox-text;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
     padding: 10px;
     display: inline-block;
-    border: solid 1px #ffffff;
-    border-radius: 5px;
+    border: solid 1px #fff;
+    border-radius: 8px;
     transition: background-color 0.35s;
-    margin: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
 }
 
 .meBox-text:hover {
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgb(255, 255, 255, 0.25);
 }
 
 #footer {
@@ -146,21 +129,7 @@ a {
     position: absolute;
     width: 100%;
     background-color: transparent;
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-align: center;
     bottom: 15px;
-}
-
-@media screen and (max-width: 480px) {
-    #box {
-        width: 100%;
-        height: max-content;
-    }
-
-    .meBox {
-        width: 80%;
-        margin: 0 auto;
-
-    }
-
 }

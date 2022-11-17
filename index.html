@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8"
-        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
-        name="viewport">
-    <title>余空の主页</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="余空,YuKongA,主页,Homepage" name="keywords">
+    <title>余空の主页</title>
     <link rel="shortcut icon" url="favicon.ico">
     <link href="css/YuKongA.css" rel="stylesheet" type="text/css">
 </head>
@@ -16,10 +16,19 @@
         <div class="meBox">
             <div class="headPhoto"></div>
             <div class="meBox-title">
-                <div class="fg1"></div>
-                <p>YuKongA</p>
-                <div class="fg2"></div>
+                <span class="typing"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                      var typed = new Typed(".typing", {
+                        strings: ['YuKongA', '余空'],
+                        startDelay: 100,
+                        backSpeed: 20,
+                        typeSpeed: 50,
+                        loop: true
+                    });
+                </script>
             </div>
+            <div class="meBox-fg"></div>
             <div class="meBox-hitokoto">
                 <p id="hitokoto"></p>
             </div>
@@ -37,13 +46,13 @@
             </div>
         </div>
     </div>
-    <div id="footer">
+    <div class="footer">
         <p><b>Copyrights © 2022 - YuKongA</b></p>
     </div>
 </body>
 
 <script>
-    fetch("https://v1.hitokoto.cn")
+    fetch('https://v1.hitokoto.cn?max_length=20')
         .then(response => response.json())
         .then(data => {
             const hitokoto = document.getElementById("hitokoto")

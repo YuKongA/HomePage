@@ -108,3 +108,13 @@ p {
     bottom: 0;
     padding: 1em 0;
 }
+
+@media screen and (max-width : 480px) {
+
+    .meBox-text {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+}

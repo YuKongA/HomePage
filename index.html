@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="余空,YuKongA,主页,Homepage" name="keywords">
+    <meta content="余空,YuKongA" name="keywords">
+    <link rel="stylesheet"
+        href="https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&display=swap">
     <title>余空の主页</title>
-    <link rel="shortcut icon" url="favicon.ico">
+    <link rel="shortcut icon" url="../public/favicon.ico">
     <link href="css/YuKongA.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -17,23 +18,11 @@
             <div class="headPhoto"></div>
             <div class="meBox-title">
                 <span class="typing"></span>
-                <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-                <script>
-                    var typed = new Typed(".typing", {
-                        strings: ['YuKongA', '余空'],
-                        startDelay: 100,
-                        backSpeed: 20,
-                        typeSpeed: 50,
-                        loop: true
-                    });
-                </script>
+
             </div>
             <div class="meBox-fg"></div>
             <div class="meBox-hitokoto">
                 <p id="hitokoto"></p>
-            </div>
-            <div class="meBox-text">
-                <a href="https://github.com/YuKongA">GitHub</a>
             </div>
             <div class="meBox-text">
                 <a href="https://font.yukonga.top/">字体字重测试</a>
@@ -43,8 +32,8 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p><b>Copyrights © 2023 - YuKongA</b></p>
+    <div id="footer">
+        <p>Copyrights © 2023 - <a class="footer-msg" href="https://github.com/YuKongA">YuKongA</a></p>
     </div>
 </body>
 
@@ -56,6 +45,17 @@
             hitokoto.innerText = data.hitokoto + "——" + "「" + data.from + "」"
         })
         .catch(console.error)
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".typing", {
+        strings: ['YuKongA', '余空'],
+        startDelay: 100,
+        backSpeed: 20,
+        typeSpeed: 50,
+        loop: true
+    });
 </script>
 
 </html>

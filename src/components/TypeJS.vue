@@ -24,7 +24,7 @@ const options: TypedOptions = {
     height: 100px;
     font-size: 3rem;
     color: #fff;
-    text-shadow: 0.5px 0.5px 0 #000;
-    margin: 40px auto 0px auto;
+    text-shadow: #00000018;
+    animation: floatUp 1s ease-out;
 }
 </style>

@@ -7,7 +7,10 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "MiSans VF";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "MiSans VF", sans-serif;
 }
 
 body {
@@ -15,25 +18,53 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
 }
 
-#marpper {
-  height: max-content;
+#main {
   position: absolute;
-  left: 0;
   top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.all {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5rem;
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  box-sizing: border-box;
 }
 
 p {
   color: #fff;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100px) scale(1.02);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
 }

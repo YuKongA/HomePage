@@ -2,20 +2,32 @@
 import TypeJS from './components/TypeJS.vue';
 import Hitokoto from './components/Hitokoto.vue';
 import Copyrights from './components/Copyrights.vue';
+import MyButton from './components/MyButton.vue';
+</script>
+
+<script>
+export default {
+  methods: {
+    handleAnimationEnd(event) {
+      event.target.style.transition = 'transform 0.3s ease';
+    },
+  },
+};
 </script>
 
 <template>
-  <div id="marpper">
-    <div class="meBox">
-      <div class="meBox-headPhoto"></div>
-      <TypeJS />
-      <div class="meBox-line"></div>
-      <Hitokoto />
-      <div class="meBox-link">
-        <a href="https://font.yukonga.top/">字体字重测试</a>
-      </div>
-      <div class="meBox-link">
-        <a href="https://icon.yukonga.top/">iOS 应用图标</a>
+  <div id="main">
+    <div class="container">
+      <div class="all">
+        <div class="meBox">
+          <div class="meBox-headPhoto"></div>
+          <TypeJS />
+          <div class="meBox-line"></div>
+          <div class="meBox-main">
+            <Hitokoto />
+          </div>
+          <MyButton />
+        </div>
       </div>
     </div>
   </div>
@@ -24,55 +36,57 @@ import Copyrights from './components/Copyrights.vue';
 
 <style scoped>
 .meBox {
-  text-align: center;
+  min-width: 30rem;
+  max-width: 35rem;
 }
 
 .meBox-headPhoto {
   width: 8rem;
   height: 8rem;
-  background: url(/favicon.ico) no-repeat;
+  background: url(/favicon.ico);
   background-size: cover;
   border-radius: 50%;
   margin: 0 auto;
-  position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  transition: transform 0.65s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  animation: floatUp 1s ease-out;
+  transition: transform 0.67s ease;
 }
 
 .meBox-headPhoto:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.1);
 }
 
+.meBox-main {
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  background-color: #00000018;
+  animation: floatUp 1s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.meBox-main:hover {
+  transform: scale(1.01);
+}
 
 .meBox-line {
   width: 120px;
   height: 0.5px;
   background-color: #fff;
-  border-radius: 50px;
   margin: 0 auto 40px auto;
-}
-
-.meBox-link {
-  width: 115px;
-  text-align: center;
-  padding: 10px;
-  display: inline-block;
-  border: solid 1px #fff;
-  border-radius: 8px;
-  background-color: rgb(0, 0, 0, 0.05);
-  transition: background-color 0.35s;
-  margin: 5px;
-}
-
-.meBox-link:hover {
-  background-color: rgb(255, 255, 255, 0.25);
+  animation: floatUp 1s ease-out;
 }
 
 @media screen and (max-width : 560px) {
-  .meBox-link {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
+  .meBox {
+    min-width: 100%;
+  }
+
+  .meBox-main {
+    box-sizing: border-box;
   }
 }
 </style>

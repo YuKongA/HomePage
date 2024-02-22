@@ -21,15 +21,20 @@ const links = ref([{ name: 'YuKongA', url: 'https://github.com/YuKongA/' }]);
     right: calc(50vw - 130px);
     color: #FFF;
     padding: 5px;
-    transition: all 0.5s ease-out;
     border-radius: 10px;
-    transition: background-color 0.5s;
+    background-color: #00000018;
     font-family: "MiSans VF";
     text-align: center;
+    text-shadow: #00000018;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+    animation: floatUp 0.3s ease-out forwards;
 }
 
 #footer:hover {
-    background-color: rgb(0, 0, 0, 0.67);
+    background-color: #00000038;
 }
 
 a.footer-msg {

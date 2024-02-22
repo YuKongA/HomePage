@@ -17,17 +17,15 @@ export default {
 
 <template>
   <div id="main">
-    <div class="container">
-      <div class="all">
-        <div class="meBox">
-          <div class="meBox-headPhoto"></div>
-          <TypeJS />
-          <div class="meBox-line"></div>
-          <div class="meBox-main">
-            <Hitokoto />
-          </div>
-          <MyButton />
+    <div class="center-flexbox">
+      <div class="meBox">
+        <div class="meBox-headPhoto"></div>
+        <TypeJS />
+        <div class="meBox-line"></div>
+        <div class="meBox-main">
+          <Hitokoto />
         </div>
+        <MyButton />
       </div>
     </div>
   </div>

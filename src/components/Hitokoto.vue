@@ -16,9 +16,9 @@ getHitokoto();
 
 <template>
     <div class="meBox-hitokoto">
-        <div class="bracket left">『</div>
+        <div class="bracket left">“</div>
         <p>{{ hitokoto.hitokoto }}</p>
-        <div class="bracket right">』</div>
+        <div class="bracket right">”</div>
         <p class="right-align">——「{{ hitokoto.from }}」</p>
     </div>
 </template>
@@ -33,15 +33,15 @@ getHitokoto();
 .right-align {
     text-align: right;
 }
+
 .bracket {
     font-size: 2rem;
     color: #fff;
     text-shadow: #00000018;
-    margin: 0 10px;
 }
 
 .bracket.left {
-    text-align: left;;
+    text-align: left;
 }
 
 .bracket.right {

@@ -26,7 +26,7 @@ getHitokoto();
 <style scoped>
 .meBox-hitokoto {
     font-size: 1.2rem;
-    text-shadow: #00000018;
+    text-shadow: #00000043;
     border-right: 0 solid;
 }
 
@@ -37,7 +37,7 @@ getHitokoto();
 .bracket {
     font-size: 2rem;
     color: #fff;
-    text-shadow: #00000018;
+    text-shadow: #00000043;
 }
 
 .bracket.left {

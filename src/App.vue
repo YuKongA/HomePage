@@ -45,7 +45,7 @@ export default {
   background-size: cover;
   border-radius: 50%;
   margin: 0 auto;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
   animation: floatUp 1s ease-out;
   transition: transform 0.67s ease;
@@ -57,11 +57,11 @@ export default {
 
 .meBox-main {
   padding: 2rem;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  background-color: #00000018;
+  background-color: #00000043;
   animation: floatUp 1s ease-out;
   transition: transform 0.3s ease;
 }
@@ -73,9 +73,10 @@ export default {
 .meBox-line {
   width: 120px;
   height: 0.5px;
-  background-color: #fff;
-  margin: 0 auto 40px auto;
+  background-color: #fffffff3;
+  margin: 25px auto 35px auto;
   animation: floatUp 1s ease-out;
+  transition: transform 0.67s ease;
 }
 
 @media screen and (max-width : 560px) {

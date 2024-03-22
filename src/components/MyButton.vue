@@ -33,15 +33,15 @@ export default {
     padding: 10px 0;
     border-radius: 10px;
     margin: 0 10px;
-    background-color: #00000018;
+    background-color: #00000043;
     color: #fff;
     border: none;
     cursor: pointer;
     transition: all 0.3s;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    text-shadow: #00000018;
+    text-shadow: #00000043;
     animation: floatUp 1s ease-out;
     transition: transform 0.3s ease;
 }

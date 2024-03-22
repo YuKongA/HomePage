@@ -21,10 +21,8 @@ const options: TypedOptions = {
 
 <style scoped>
 .meBox-title {
-    height: 100px;
     font-size: 3rem;
-    color: #fff;
-    text-shadow: #00000018;
+    color: #fffffff3;
     animation: floatUp 1s ease-out;
 }
 </style>

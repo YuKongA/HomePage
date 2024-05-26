@@ -15,11 +15,11 @@ getHitokoto();
 </script>
 
 <template>
-    <div class="meBox-hitokoto">
-        <div class="bracket left">“</div>
-        <p>{{ hitokoto.hitokoto }}</p>
-        <div class="bracket right">”</div>
-        <p class="right-align">——「{{ hitokoto.from }}」</p>
+    <div class="meBox-hitokoto main-blur">
+        <div class="bracket left text-blur">“</div>
+        <p class="text-blur">{{ hitokoto.hitokoto }}</p>
+        <div class="bracket right text-blur">”</div>
+        <p class="right-align text-blur">——「{{ hitokoto.from }}」</p>
     </div>
 </template>
 
@@ -28,6 +28,10 @@ getHitokoto();
     font-size: 1.2rem;
     text-shadow: #00000043;
     border-right: 0 solid;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    background-color: #00000050;
 }
 
 .right-align {
@@ -36,7 +40,6 @@ getHitokoto();
 
 .bracket {
     font-size: 2rem;
-    color: #fff;
     text-shadow: #00000043;
 }
 

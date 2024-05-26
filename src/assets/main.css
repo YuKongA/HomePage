@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background-image: url(/Background.webp);
+  background-image: url(/Bg.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -50,6 +50,27 @@ a {
 
 p {
   color: #fff;
+}
+
+.main-blur {
+  background: url(/Blur_Bg.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.text-blur {
+  background: url(/Blur_Text.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes floatUp {

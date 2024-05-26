@@ -1,4 +1,3 @@
-
 <script>
 export default {
     data() {
@@ -15,8 +14,10 @@ export default {
 
 <template>
     <div class="myButton-container">
-        <a class="meBox-button" v-for="(link, i) in links" :key="i" :href="link.url">
-            {{ link.name }}
+        <a class="meBox-button main-blur" v-for="(link, i) in links" :key="i" :href="link.url">
+            <a class="click-status text-blur">
+                {{ link.name }}
+            </a>
         </a>
     </div>
 </template>
@@ -33,21 +34,13 @@ export default {
     padding: 10px 0;
     border-radius: 10px;
     margin: 0 10px;
-    background-color: #00000043;
-    color: #fff;
-    border: none;
-    cursor: pointer;
     transition: all 0.3s;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     text-shadow: #00000043;
-    animation: floatUp 1s ease-out;
-    transition: transform 0.3s ease;
 }
 
 .meBox-button:hover {
-    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.67);
 }
 
 .meBox-button:first-child {
@@ -58,8 +51,16 @@ export default {
     margin-right: 0;
 }
 
-.meBox-button:hover {
-    background-color: #00000038;
-    transition: all 0.3s;
+.click-status {
+    transition: all 0.5s;
+}
+
+.click-status:active,
+.click-status:focus {
+    color: transparent;
+}
+
+.click-status:hover {
+    color: #66CC66;
 }
 </style>

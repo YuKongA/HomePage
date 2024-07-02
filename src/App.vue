@@ -1,6 +1,6 @@
 <script setup>
 import Hitokoto from './components/Hitokoto.vue';
-import Copyrights from './components/Copyrights.vue';
+import Copyright from './components/Copyright.vue';
 import MyButton from './components/MyButton.vue';
 </script>
 
@@ -17,7 +17,7 @@ import MyButton from './components/MyButton.vue';
     </div>
   </div>
 
-  <Copyrights />
+  <Copyright />
 </template>
 
 <style scoped>

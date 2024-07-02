@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const copyrights = ref('Copyrights © 2023 - ');
+const copyrights = ref('Copyright © 2024 - ');
 const links = ref([{ name: 'YuKongA', url: 'https://github.com/YuKongA/' }]);
 </script>
 

@@ -29,7 +29,7 @@ import MyButton from './components/MyButton.vue';
 .meBox-headPhoto {
   width: 8rem;
   height: 8rem;
-  background: url(/favicon.ico);
+  background: url(/YuKongA.webp);
   background-size: cover;
   border-radius: 50%;
   margin: 0 auto;

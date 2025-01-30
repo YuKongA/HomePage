@@ -5,7 +5,7 @@ export default {
             links: [
                 { name: 'GitHub', url: 'https://github.com/YuKongA/' },
                 { name: 'Telegram', url: 'https://t.me/YuKongA13579/' },
-                { name: 'Bilibili', url: 'https://space.bilibili.com/275669376/' },
+                { name: 'Afdian', url: 'https://afdian.com/a/YuKongA/' },
             ],
         };
     },
@@ -15,9 +15,9 @@ export default {
 <template>
     <div class="myButton-container">
         <a class="meBox-button main-blur" v-for="(link, i) in links" :key="i" :href="link.url">
-            <a class="click-status text-blur">
+            <span class="click-status text-blur">
                 {{ link.name }}
-            </a>
+            </span>
         </a>
     </div>
 </template>
@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .myButton-container {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
     justify-content: space-between;
 }
 
@@ -61,6 +61,6 @@ export default {
 }
 
 .click-status:hover {
-    color: #66CC66;
+    color: #fff;
 }
 </style>

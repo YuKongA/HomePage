@@ -28,7 +28,7 @@ getHitokoto();
     font-size: 1.2rem;
     text-shadow: #00000043;
     border-right: 0 solid;
-    padding: 2rem;
+    padding: 1.8rem;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
     background-color: #00000050;
@@ -39,7 +39,7 @@ getHitokoto();
 }
 
 .bracket {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-shadow: #00000043;
 }
 

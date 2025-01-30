@@ -34,13 +34,7 @@ import MyButton from './components/MyButton.vue';
   border-radius: 50%;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
-}
-
-.meBox-headPhoto:hover {
-  transform: rotate(360deg) scale(1.1);
+  margin-bottom: 1rem;
 }
 
 .meBox-title {
@@ -50,7 +44,7 @@ import MyButton from './components/MyButton.vue';
 .meBox-line {
   width: 150px;
   height: 4px;
-  margin: 20px auto 40px auto;
+  margin: 20px auto 30px auto;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/Blur_Text.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;

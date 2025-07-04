@@ -9,7 +9,7 @@ import MyButton from './components/MyButton.vue';
     <div class="meBox-headPhoto"></div>
     <div class="center-flexbox">
       <div class="meBox">
-        <div class="meBox-title text-blur">YukongA</div>
+        <div class="meBox-title text-blur">YuKongA</div>
         <div class="meBox-line"></div>
         <Hitokoto />
         <MyButton />

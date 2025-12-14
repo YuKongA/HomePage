@@ -1,83 +1,18 @@
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>YuKongA</title>
-	<meta content="余空, YuKongA" name="keywords">
-	<meta name="description" content="YuKongA" />
-	<meta charset="utf-8" />
-	<link rel="icon" href="images/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<script type="text/javascript">
-		var bgs = [
-			"images/1.webp",
-			"images/2.webp",
-			"images/3.webp",
-			"images/4.webp",
-		];
-		var randomBgIndex = Math.floor(Math.random() * bgs.length);
-		document.write(
-			'<style>#bg:after { -moz-transform: scale(1.125); -webkit-transform: scale(1.125); -ms-transform: scale(1.125); transform: scale(1.125); -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out; -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out; -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out; transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out; -webkit-filter: blur(10px); filter: blur(10px); background-image: url("' +
-			bgs[randomBgIndex] +
-			'"); background-position: center; background-size: cover; background-repeat: no-repeat; z-index: 1; }</style>'
-		);
-	</script>
+  <title>YuKongA</title>
+  <meta content="余空, YuKongA" name="keywords" />
+  <meta name="description" content="YuKongA" />
+  <meta charset="utf-8" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
 
 <body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<object type="image/webp" data="images/YuKongA.webp" height="80%" width="80%"
-					style="position: relative; top: 10%"></object>
-			</div>
-			<div class="content">
-				<div class="inner">
-					<h1>YuKongA</h1>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="https://github.com/577fkj/">GitHub</a></li>
-					<li><a href="https://t.me/YuKongA13579/">Telegram</a></li>
-					<li><a href="https://afdian.com/a/YuKongA/">Afdian</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<p class="copyright">
-				Copyright &copy;
-				<script type="text/javascript">
-					var date = new Date();
-					document.write(date.getFullYear());
-				</script>
-				YuKongA
-			</p>
-		</footer>
-	</div>
-
-	<!-- BG -->
-	<div id="bg"></div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/main.js"></script>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

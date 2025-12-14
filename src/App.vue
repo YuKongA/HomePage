@@ -14,10 +14,10 @@
         <nav ref="nav">
           <ul>
             <li><a href="https://font.yukonga.top/">字体字重测试</a></li>
-            <li><a href="https://icon.yukonga.top/">获取高清图标</a></li>
             <li><a href="https://afdian.com/a/YuKongA/">爱发电</a></li>
-            <li><a href="https://github.com/YuKongA/">GitHub</a></li>
+            <li><a href="https://icon.yukonga.top/">获取高清图标</a></li>
             <li><a href="https://t.me/YuKongA13579/">Telegram</a></li>
+            <li><a href="https://github.com/YuKongA/">GitHub</a></li>
             <li><a href="https://miuix-js.yukonga.top/">Miuix Demo</a></li>
           </ul>
         </nav>

@@ -35,7 +35,9 @@ export default {
     border-radius: 10px;
     margin: 0 10px;
     transition: all 0.3s;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px rgba(0, 0, 0, 0.25), inset 1px rgba(255, 255, 255, 0.05);
+    background-color: #00000050;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     text-shadow: #00000043;
 }
 

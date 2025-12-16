@@ -38,20 +38,13 @@ ul {
 
 body {
 	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 /* Basic */
 
 @-ms-viewport {
 	width: device-width;
-}
-
-@media screen and (max-width: 460px) {
-
-	html,
-	body {
-		min-width: 320px;
-	}
 }
 
 html {
@@ -103,19 +96,7 @@ body.is-preload *:after {
 /* Type */
 
 html {
-	font-size: 16pt;
-}
-
-@media screen and (max-width: 1680px) {
-	html {
-		font-size: 12pt;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	html {
-		font-size: 11pt;
-	}
+	font-size: clamp(15px, 0.5vw + 11px, 18px);
 }
 
 body {
@@ -252,12 +233,6 @@ body.is-preload #bg:before {
 	display: block;
 }
 
-@media screen and (max-width: 1680px) {
-	#wrapper {
-		padding: 3rem 2rem;
-	}
-}
-
 @media screen and (max-width: 400px) {
 	#wrapper {
 		padding: 1rem;
@@ -322,9 +297,9 @@ body.is-preload #bg:before {
 }
 
 #header .logo {
-	width: 5.5rem;
-	height: 5.5rem;
-	line-height: 5.5rem;
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
 	border: solid 1px var(--border-strong);
 	border-radius: 100%;
 }
@@ -389,81 +364,8 @@ body.is-preload #bg:before {
 	padding: 0 1.25rem 0 1.45rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	font-size: 0.8rem;
+	font-size: 0.85rem;
 	border-bottom: 0;
-}
-
-@media screen and (min-width: 551px) and (max-width: 880px) {
-	#header nav ul {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(7.5rem, 1fr));
-		gap: 0;
-	}
-
-	#header nav:before {
-		display: block;
-	}
-
-	#header nav.use-middle:after {
-		display: none !important;
-		content: none !important;
-	}
-
-	#header nav:after {
-		display: none !important;
-		content: none !important;
-	}
-
-	#header nav ul li {
-		border-left: 0 !important;
-		border-top: 0 !important;
-	}
-
-	#header nav ul li:nth-child(3n+2),
-	#header nav ul li:nth-child(3n+3) {
-		border-left: solid 1px var(--border-strong) !important;
-	}
-
-	#header nav ul li:nth-child(n+4) {
-		border-top: solid 1px var(--border-strong) !important;
-	}
-}
-
-@media screen and (min-width: 401px) and (max-width: 550px) {
-	#header nav ul {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(7.5rem, 1fr));
-		gap: 0;
-		background-image: linear-gradient(to right,
-				transparent calc(50% - 0.5px),
-				var(--border-strong) calc(50% - 0.5px),
-				var(--border-strong) calc(50% + 0.5px),
-				transparent calc(50% + 0.5px));
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	}
-
-	#header nav:before {
-		display: block;
-	}
-
-	#header nav.use-middle:after {
-		display: none !important;
-	}
-
-	#header nav:after {
-		display: none !important;
-		content: none !important;
-	}
-
-	#header nav ul li {
-		border-left: 0 !important;
-		border-top: 0 !important;
-	}
-
-	#header nav ul li:nth-child(n+3) {
-		border-top: solid 1px var(--border-strong) !important;
-	}
 }
 
 #header nav ul li a:hover {
@@ -508,23 +410,48 @@ body.is-preload #header .content .inner {
 	opacity: 0;
 }
 
+@media screen and (min-width: 551px) and (max-width: 880px) {
+	#header nav ul {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(7.5rem, 1fr));
+	}
+
+	#header nav ul li:nth-child(3n+2),
+	#header nav ul li:nth-child(3n+3) {
+		border-left: solid 1px var(--border-strong);
+	}
+
+	#header nav ul li:nth-child(n+4) {
+		border-top: solid 1px var(--border-strong);
+	}
+
+	#header nav.use-middle:after {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 550px) {
+	#header nav ul {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(7.5rem, 1fr));
+	}
+
+	#header nav ul li {
+		border-left: 0;
+	}
+
+	#header nav ul li:nth-child(n+3) {
+		border-top: solid 1px var(--border-strong);
+	}
+}
+
 @media screen and (max-width: 400px) {
-	#header {
-		padding: 1.5rem 0;
-	}
-
-	#header .logo {
-		width: 5rem;
-		height: 5rem;
-		line-height: 5rem;
-	}
-
 	#header .content .inner {
-		padding: 2rem 0.75rem;
+		padding: 2rem 1rem;
 	}
 
 	#header nav {
-		width: 100%;
+		width: 75%;
 	}
 
 	#header nav ul {
@@ -532,7 +459,6 @@ body.is-preload #header .content .inner {
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		min-width: 10rem;
 		max-width: 100%;
 	}
 
@@ -546,12 +472,10 @@ body.is-preload #header .content .inner {
 	}
 
 	#header nav ul li a {
-		height: 3.25rem;
-		line-height: 3.25rem;
+		height: 3rem;
+		line-height: 3rem;
 		min-width: 0;
 		width: 100%;
-		font-size: 0.85rem;
-		padding: 0 1rem 0 1rem;
 	}
 
 	#header nav.use-middle:after {

@@ -38,7 +38,7 @@
 import { onMounted, ref, computed } from 'vue'
 
 const nav = ref(null)
-const bgs = ['1.webp', '2.webp', '3.webp', '4.webp']
+const bgs = ['1.webp', '2.webp', '3.webp', '4.webp', '5.webp']
 const bgIndex = Math.floor(Math.random() * bgs.length)
 const currentBg = bgs[bgIndex]
 const bgStyle = computed(() => ({

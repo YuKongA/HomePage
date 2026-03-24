@@ -1,6 +1,12 @@
 # HomePage
 
-一个使用 Vite + Vue 构建的个人主页。
+一个简单的个人主页
+
+## 技术栈
+
+- [Vue 3](https://vuejs.org/) — 前端框架
+- [Vite](https://vite.dev/) — 构建工具
+- [PostCSS](https://postcss.org/) + Autoprefixer — CSS 处理
 
 ## Credits
 

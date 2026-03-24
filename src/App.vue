@@ -3,8 +3,8 @@
     <div id="wrapper">
       <header id="header">
         <div class="logo">
-          <object type="image/webp" data="YuKongA.webp" height="80%" width="80%"
-            style="position: relative; top: 10%"></object>
+          <img src="/YuKongA.webp" alt="YuKongA" width="80%" height="80%" style="position: relative; top: 10%"
+            loading="eager" decoding="async">
         </div>
         <div class="content">
           <div class="inner">
@@ -45,11 +45,30 @@ const bgStyle = computed(() => ({
   '--bg-image': `url("/${currentBg}")`
 }))
 
+const preloadLink = document.createElement('link')
+preloadLink.rel = 'preload'
+preloadLink.as = 'image'
+preloadLink.href = `/${currentBg}`
+document.head.appendChild(preloadLink)
+
 onMounted(() => {
   const body = document.body
-  setTimeout(() => {
-    body.classList.remove('is-preload')
-  }, 100)
+  const img = new Image()
+  img.src = `/${currentBg}`
+
+  const reveal = () => {
+    requestAnimationFrame(() => {
+      body.classList.remove('is-preload')
+    })
+  }
+
+  if (img.complete) {
+    reveal()
+  } else {
+    img.onload = reveal
+    img.onerror = reveal
+    setTimeout(reveal, 800)
+  }
 
   const $nav = nav.value
   if ($nav) {
@@ -65,20 +84,14 @@ onMounted(() => {
 
 <style>
 #bg:after {
-  -moz-transform: scale(1.125);
-  -webkit-transform: scale(1.125);
-  -ms-transform: scale(1.125);
   transform: scale(1.125);
-  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  -webkit-filter: blur(10px);
   filter: blur(10px);
   background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  will-change: transform, filter;
 }
 </style>

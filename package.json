@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.5",
+    "autoprefixer": "^10.4.27",
     "vite": "^8"
   }
 }

@@ -18,7 +18,7 @@
             <li><a href="https://ifdian.net/a/YuKongA/"><span>afdian</span></a></li>
             <li><a href="https://font.yukonga.top/"><span>Font Test</span></a></li>
             <li><a href="https://icon.yukonga.top/"><span>HQ ICON</span></a></li>
-            <li><a href="https://compose-miuix-ui.github.io/miuix-jsCanvas/"><span>Miuix Demo</span></a></li>
+            <li><a href="https://compose-miuix-ui.github.io/miuix/"><span>Miuix</span></a></li>
           </ul>
         </nav>
       </header>
